@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body>
+    <form asp-controller="Home" asp-action="Post" method="POST">
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
+</body>
+<div id="messages"></div>
+
+<script src="~/lib/signalr.js"></script>
+<script src="~/js/message.js"></script>
